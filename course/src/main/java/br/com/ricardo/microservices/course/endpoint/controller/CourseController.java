@@ -1,6 +1,6 @@
 package br.com.ricardo.microservices.course.endpoint.controller;
 
-import br.com.ricardo.microservices.course.endpoint.model.Course;
+import br.com.ricardo.microservices.core.model.Course;
 import br.com.ricardo.microservices.course.endpoint.service.CourseService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
 package br.com.ricardo.microservices.course.endpoint.service;
 
-import br.com.ricardo.microservices.course.endpoint.model.Course;
-import br.com.ricardo.microservices.course.endpoint.repository.CourseRepository;
+import br.com.ricardo.microservices.core.model.Course;
+import br.com.ricardo.microservices.core.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package br.com.ricardo.microservices.course.endpoint.model;
+package br.com.ricardo.microservices.core.model;
 
 import java.io.Serializable;
 
