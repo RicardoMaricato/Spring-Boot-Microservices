@@ -39,7 +39,6 @@ public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
                 .antMatchers("/course/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated();
-
     }
 
     @Override
