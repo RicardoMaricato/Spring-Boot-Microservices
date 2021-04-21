@@ -21,3 +21,8 @@ zuul:
 jwt:
   config:
     login-url: /auth/login
+    type: signed
+
+ribbon:
+  ReadTimout: 1000
+  ConnectTimeout: 1000

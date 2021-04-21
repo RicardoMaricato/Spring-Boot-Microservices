@@ -26,8 +26,8 @@ public class JwtTokenAuthorizationFilter extends OncePerRequestFilter {
     protected final TokenConverter tokenConverter;
 
     @Override
-    protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response,
-                                    @NonNull FilterChain chain) throws ServletException, IOException {
+    @SuppressWarnings("Duplicates")
+    protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull FilterChain chain) throws ServletException, IOException {
         String header = request.getHeader(jwtConfiguration.getHeader().getName());
 
         if (header == null || !header.startsWith(jwtConfiguration.getHeader().getPrefix())) {
@@ -55,4 +55,5 @@ public class JwtTokenAuthorizationFilter extends OncePerRequestFilter {
         return SignedJWT.parse(signedToken);
     }
 }
+
 

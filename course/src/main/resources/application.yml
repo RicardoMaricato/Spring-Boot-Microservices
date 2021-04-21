@@ -22,6 +22,10 @@ spring:
       ddl-auto: update
     show-sql: true
 
+jwt:
+  config:
+    type: signed
+
 #spring:
 #  application:
 #    name: course

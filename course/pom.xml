@@ -16,9 +16,23 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<devdojo-core.version>1.0-SNAPSHOT</devdojo-core.version>
+		<devdojo-token.version>1.0-SNAPSHOT</devdojo-token.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>br.com.ricardo.microservices</groupId>
+			<artifactId>token</artifactId>
+			<version>${devdojo-token.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.ricardo.microservices</groupId>
+			<artifactId>core</artifactId>
+			<version>${devdojo-core.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>br.com.ricardo.microservices</groupId>
 			<artifactId>core</artifactId>
